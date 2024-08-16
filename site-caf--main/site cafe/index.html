@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe C/choro</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="cabeçalho">
+      <div class="container">
+        <input type="checkbox" id="menu" class="container__botao" />
+        <label for="menu">
+          <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+        </label>
+        <ul class="lista-menu">
+          <li class="lista-menu__titulo">Categorias</li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">clasic coffes</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">mid coffes</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">epic coffes</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">supreme coffes</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">salgados</a>
+          </li>
+        </ul>
+        <img
+         
+          class="container__imagem"
+        />
+        <h1 class="container__titulo">
+          <b class="container__titulo--negrito">Cafe</b>C/choro
+        </h1>
+      </div>
+
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu">
+          <li class="opções__item">Categorias</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Classic Coffes</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Mid Coffes</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Epic Coffes</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Supreme Coffes</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Salgados</a>
+          </li>
+        </ul>
+
+        <li class="opções__item">
+          <a href="#" class="opções__link">Favoritos</a>
+        </li>
+        <li class="opções__item">
+          <a href="#" class="opções__link">Minhas avaliações</a>
+        </li>
+      </ul>
+
+      <div class="container">
+        <a href="#"
+          ><img
+            src="img/Favoritos.svg"
+            alt="Meus favoritos"
+            class="container__imagem container__imagem-transparente"
+        /></a>
+
+        <a href="#"
+          ><img
+            src="cesta.png"
+            alt="Carrinhos de compras"
+            class="container__imagem"
+        /></a>
+        <a href="#"
+          ><img
+            src="perfil.png"
+            alt="Meu perfil"
+            class="container__imagem"
+        /></a>
+      </div>
+    </header>
+    <section class="banner">
+      <h2 class="banner__titulo">Supreme coffe</h2>
+      <p class="banner__texto">
+        Encontre em nossa loja virtual a sua proxima refeição
+      </p>
+      <input
+        type="search"
+        class="banner__pesquisa"
+        placeholder="Qual será seu proximo expresso?"
+      />
+    </section>
+    <section class="carrossel">
+      <h2 class="carrossel__titulo">Nossos Cafés</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              src="cafe2.jpeg"
+              alt="Livro sobre apache kafka e spring boot da alura books"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="cafe3.jpeg"
+              alt="Livro sobre liderança em design da alura books"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="cafe4.jpg"
+              alt="Livro sobre javascript assertivo da alurabooks"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="cafe5.jpg" alt="Livro Guia front end" />
+          </div>
+          <div class="swiper-slide">
+            <img src="cafe6.jpg" alt="Livro sobre portugol" />
+          </div>
+          <div class="swiper-slide">
+            <img src="cafe7.jpg" alt="livro sobre acessibilidade" />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <!-- 1º linha -->
+        <div class="card__descrição">
+          <!-- 1º coluna -->
+          <div class="descrição">
+            <h3 class="descrição__titulo">
+              Talvez você também se interesse por...
+            </h3>
+            <h2 class="descrição__titulo-livro">One Punch-Man</h2>
+            <p class="descrição__texto">
+              One Punch-Man conta a história de Saitama, um super-herói
+              extremamente poderoso, que se entediou com a ausência dos desafios
+              nas suas lutas contra o mal e procura encontrar um oponente digno.
+            </p>
+          </div>
+          <!-- 2º coluna -->
+          <img
+            src="img/opn.jpg"
+            width="162"
+            height="168"
+            class="descrição__imagem"
+          />
+        </div>
+
+        <!-- 2º linha -->
+        <div class="card__botões">
+          <!-- 1º coluna -->
+          <ul class="botões">
+            <li class="botões__item">
+              <img src="img/Favoritos.svg" alt="Favoritar livro" />
+            </li>
+            <li class="botões__item">
+              <img
+                src="img/Compras.svg"
+                alt="Adicionar no carrinho de compras"
+              />
+            </li>
+          </ul>
+          <!-- 2º coluna -->
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="carrossel">
+      <h2 class="carrossel__titulo">nossos sanduiches</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              src="lanche.jpg"
+              alt="Livro sobre apache kafka e spring boot da alura books"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="lanche1.jpg"
+              alt="Livro sobre liderança em design da alura books"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="lanche2.jpg"
+              alt="Livro sobre javascript assertivo da alurabooks"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="lanche3.jpg" alt="Livro Guia front end" />
+          </div>
+          <div class="swiper-slide">
+            <img src="lanche4.jpg" alt="Livro sobre portugol" />
+          </div>
+          <div class="swiper-slide">
+            <img src="lanche5.jpg" alt="livro sobre acessibilidade" />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <!-- 1º linha -->
+        <div class="card__descrição">
+          <!-- 1º coluna -->
+          <div class="descrição">
+            <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas" />
+            <h3 class="descrição__titulo">Autora da saga</h3>
+            <h2 class="descrição__titulo-livro">J.K.Rowling</h2>
+            <p class="descrição__texto">
+              Em 1990, enquanto estava em uma viagem de trem de Manchester para
+              Londres, a ideia da história de um jovem garoto estudando em uma
+              escola de magia simplesmente "apareceu" em sua cabeça. Quando
+              chegou em seu apartamento em Clapham Junction, ela começou a
+              escrever imediatamente.
+            </p>
+          </div>
+          <!-- 2º coluna -->
+          <img
+            src="img/hp1000.jpg"
+            width="161"
+            height="166"
+            class="descrição__imagem"
+          />
+        </div>
+
+        <!-- 2º linha -->
+        <div class="card__botões">
+          <!-- 1º coluna -->
+          <ul class="botões">
+            <li class="botões__item">
+              <img src="img/Favoritos.svg" alt="Favoritar livro" />
+            </li>
+            <li class="botões__item">
+              <img
+                src="img/Compras.svg"
+                alt="Adicionar no carrinho de compras"
+              />
+            </li>
+          </ul>
+          <!-- 2º coluna -->
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="tópicos">
+      <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+      <ul class="tópicos__lista">
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">supreme coffes</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">classic coffes</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">epic coffes</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">sanduiches</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">sobre</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">loja</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">local</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">entre em contato</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contato">
+      <div class="contato__descrição">
+        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+        <p class="contato__texto">
+          Atualizações do cardapio, promoções e outros.
+        </p>
+      </div>
+      <input
+        type="email"
+        placeholder="Cadastre seu e-mail"
+        class="contato__email"
+      />
+    </section>
+
+    <hr />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets"
+        }
+      });
+    </script>
+  </body>
+</html>
